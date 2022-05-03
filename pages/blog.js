@@ -7,7 +7,7 @@ export default function Blog({ dataBlog }) {
       <h1>Blog Page</h1>
       {dataBlog.map((blog) => {
         return (
-          <div className={styles.card}>
+          <div key={blog.id} className={styles.card}>
             <h4>{blog.title}</h4>
             <p>{blog.body}</p>
           </div>
